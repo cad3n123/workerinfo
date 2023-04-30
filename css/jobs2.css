@@ -1,0 +1,72 @@
+h2 {
+    font-size: 2rem;
+    margin: 1rem;
+    margin-left: 0rem;
+}
+
+.job-div {
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 0rem;
+    border-style: double;
+}
+
+.job-div:hover {
+    border-style: dotted;
+}
+
+.job-div ul {
+    margin: 0rem;
+    border-bottom-style: solid;
+}
+
+.job-div ul * {
+    display: inline;
+    margin: 1rem;
+    margin-left: 0rem;
+}
+
+button {
+    font-family: inherit;
+    border: double;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-requirement-button {
+    background-color: cornflowerblue;
+}
+
+.add-requirement-button:hover {
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: lightgreen;
+}
+
+.edit-button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: lightcoral;
+}
+
+.delete-button:hover {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.job-requirements-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.job-requirements-grid ul {
+    border-bottom-style: none;
+}

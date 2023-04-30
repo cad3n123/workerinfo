@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Workers</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body id="main">
+                <div id="new-worker-form">
+                    <h1>Add New Worker:</h1>
+                    <form>
+                        <label for="first-name">First name:</label><br>
+                        <input type="text" id="first-name" name="firstname"><br>
+                        <label for="last-name">Last name:</label><br>
+                        <input type="text" id="last-name" name="lastname"><br>
+                        <label id="default-job-title" for="default-job">Default Job:</label>
+                        <div id="default-job-location">
+                            <select name="defaultjob" id="default-job">
+                                <option id="default-job-defualt-select" value="" selected="selected">Select a default job</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button id="form-button" onclick="addWorker()">Submit</button>
+                    <br>
+                </div>
+                <div id="workers-end"></div>
+        <script src="../js/workers.js"></script>
+    </body>
+</html>

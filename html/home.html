@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/home.css">
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li onclick="activateJobs2()">Jobs</li>
+                <li onclick="activateWorkers()">Workers</li>
+                <li onclick="activateInputInfo()">Input Info</li>
+                <li onclick="activateWorkerInfo()">Worker Info</li>
+            </ul>
+        </div>
+        <div class="grid-container">
+            <div id="left">
+
+            </div>
+            <div id="main">
+                <iframe src="jobs2.html" scrolling="yes" title="Jobs2" id="jobs2"></iframe>
+                <iframe src="jobs.html" scrolling="yes" title="Jobs" id="jobs" hidden></iframe>
+                <iframe src="workers.html" scrolling="yes" title="Workers" id="workers" hidden></iframe>
+                <iframe src="input-info.html" scrolling="yes" title="input-info" id="input-info" hidden></iframe>
+                <iframe src="worker-info.html" scrolling="yes" title="test" id="worker-info" hidden></iframe>
+            </div>
+            <div id="right">
+
+            </div>
+            <div id="footer">
+                <p>c 2023 La Madeleine de Corps, Inc.</p>
+            </div>
+        </div>
+
+        <div class="pop-up" id="worker-pop-up">
+            <h1 id="worker-pop-up-title">Edit Worker</h1>
+            <form>
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="first-name" name="firstname"><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="last-name" name="lastname"><br>
+                <div id="default-job-location">
+                    <select name="defaultjob" id="default-job">
+                        <option id="default-job-default-select" value="" selected="selected">Select a default job to change</option>
+                    </select>
+                </div>  
+            </form>
+            <ul>
+                <li><button class="pop-up-button" onclick="saveWorkerPopUp()">Save</button></li>
+                <li><button class="pop-up-button" onclick="cancelPopUp()">Cancel</button></li>
+            </ul>
+        </div>
+
+        <div class="pop-up" id="job-pop-up">
+            <h1 id="job-pop-up-title">Edit Job</h1>
+            <form>
+                <label for="name">Job name:</label><br>
+                <input type="text" id="name" name="jobname">
+            </form>
+            <ul>
+                <li><button class="pop-up-button" onclick="saveJobPopUp()">Save</button></li>
+                <li><button class="pop-up-button" onclick="cancelPopUp()">Cancel</button></li>
+            </ul>
+        </div>
+
+        <div class="pop-up" id="add-job-requirement-pop-up">
+            <h1 id="add-job-requirement-pop-up-title">Add Job Requirement</h1>
+            <form>
+                <input type="text" id="add-job-requirement" name="jobrequirement">
+            </form>
+            <ul>
+                <li><button class="pop-up-button" onclick="saveJobRequirementPopUp()">Save</button></li>
+                <li><button class="pop-up-button" onclick="cancelPopUp()">Cancel</button></li>
+            </ul>
+        </div>
+
+        <div class="pop-up" id="edit-job-requirement-pop-up">
+            <h1 id="edit-job-requirement-pop-up-title">Edit Job Requirement</h1>
+            <form>
+                <input type="text" id="edit-job-requirement" name="jobrequirement">
+            </form>
+            <ul>
+                <li><button class="pop-up-button" onclick="saveEditJobRequirementPopUp()">Save</button></li>
+                <li><button class="pop-up-button" onclick="cancelPopUp()">Cancel</button></li>
+            </ul>
+        </div>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>

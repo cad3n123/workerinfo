@@ -1,0 +1,52 @@
+:root {
+  font-family: 'recoletaregular_demo';
+
+  --clr-1: #004e89;
+  --clr-2: #609bc9;
+  --clr-3: white;
+  --clr-4: #ff97a8;
+  --clr-5: #ff002b;
+  --gray: rgb(44, 44, 44);
+
+  --blue-white: var(--clr-1), var(--clr-2), var(--clr-3);
+  --white-red: var(--clr-3), var(--clr-4), var(--clr-5);
+  --blue-white-red: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5);
+}
+
+@font-face {
+  font-family: 'recoletaregular_demo';
+  src: url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff2') format('woff2'),
+       url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-variant-ligatures: none;
+}
+
+body {
+  max-height: 100vh;
+  margin: 0;
+}
+
+#main{
+  min-height: 81vh;
+}
+
+#main iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#footer p {
+  color: white;
+  text-align: center;
+}
+

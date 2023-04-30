@@ -1,0 +1,189 @@
+:root {
+    font-family: 'recoletaregular_demo';
+
+    --clr-1: #004e89;
+    --clr-2: #609bc9;
+    --clr-3: white;
+    --clr-4: #ff97a8;
+    --clr-5: #ff002b;
+    --gray: rgb(44, 44, 44);
+    --light-green: #60c96e;
+    --dark-green: #008905;
+    --light-red: #ff526f;
+    --dark-red: #c01a36;
+    --light-blue: #609bc9;
+    --dark-blue: #004e89;
+
+    --blue-white: var(--clr-1), var(--clr-2), var(--clr-3);
+    --white-red: var(--clr-3), var(--clr-4), var(--clr-5);
+    --blue-white-red: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5);
+}
+
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-variant-ligatures: none;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+  
+    background-image: linear-gradient(to right, var(--blue-white-red));
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body {
+    font-size: 2rem;
+}
+
+ul, h3, form label, #worker-select * {
+    color: white;
+}
+
+#new-worker-form form {
+    color: black;
+}
+
+#new-worker-form * {
+    font-family: 'recoletaregular_demo';
+}
+
+#new-worker-form form * {
+    margin: 1rem;
+    margin-left: 0rem;
+}
+
+.individual-worker *, .individual-worker ul * {
+  display: inline;
+}
+
+.individual-job *, .individual-job ul * {
+    display: inline;
+  }
+
+#form-button {
+    font-size: 1.25rem;
+    font-family: inherit;
+    background-color: var(--clr-2);
+    border: double;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+  
+#form-button:hover {
+    background-color: var(--clr-1);
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+  
+li {
+    margin: 1rem;
+}
+
+#worker-select {
+    border: 2px solid gray;
+    width: 20rem;
+    height: 15rem;
+    overflow-y: scroll;
+}
+
+#worker-select label, .worker-job-requirements-div label {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+button {
+    color: black;
+}
+
+.edit-button, .delete-button, .add-button, .job-requirement-edit-button, .job-requirement-delete-button, #submit-input-info-button {
+    font-family: inherit;
+    border: double;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.edit-button, .delete-button, .add-button {
+    font-size: 1rem;
+}
+
+.job-requirement-edit-button, .job-requirement-delete-button {
+    font-size: .75rem;
+}
+
+
+#default-job {
+    font-size: 1rem;
+    margin: 0rem;
+}
+
+.job-requirement-button-list li {
+    display: inline;
+}
+
+.job-requirement-list li * {
+    display: inline;
+}
+
+.worker-checkbox, .worker-job-requirement-checkbox, .worker-radio {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    margin-left: 1rem;
+    margin-right: 0px;
+}
+
+#worker-info {
+    color: white;
+}
+
+.individual-worker-info-div {
+    margin-top: 1rem;
+}
+
+.individual-worker-info-div * {
+    display: inline;
+}
+
+.worker-job-dropdown-div {
+    margin: 1rem;
+}
+
+#submit-input-info-button {
+    margin: 1rem;
+    margin-left: 0rem;
+    font-size: 1.25rem;
+}
+
+#submit-input-info-button:hover {
+    color: grey;
+    background-color: black;
+}

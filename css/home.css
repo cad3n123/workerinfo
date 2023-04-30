@@ -1,0 +1,110 @@
+:root {
+    --worker-pop-up-width: 75vw;
+    --worker-pop-up-height: 40rem;
+    --worker-pop-up-left: calc(50vw - var(--worker-pop-up-width) / 2);
+    --worker-pop-up-top: calc(50vh - var(--worker-pop-up-height) / 1.9);
+
+    --menu-margin: .5rem;
+    --menu-height: 4rem;
+    --menu-width: calc(99vw - 2 * var(--menu-margin));
+  
+    --grid-containter-top: calc(var(--menu-height) + 2 * var(--menu-margin));
+    --grid-container-middle: 50vw;
+    --grid-container-left: calc((98vw - var(--grid-container-middle)) / 2);
+    --grid-container-right: calc((98vw - var(--grid-container-middle)) / 2);
+}
+
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-variant-ligatures: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: var(--grid-container-left) var(--grid-container-middle) var(--grid-container-right);
+    margin-top: var(--grid-containter-top);
+  }
+  
+#menu {
+    background-image: linear-gradient(135deg, var(--blue-white-red));
+    height: var(--menu-height);
+    width: var(--menu-width);
+    position: fixed;
+    border-radius: 1rem;
+    margin: var(--menu-margin);
+    top: 0;
+    left: 0;
+}
+  
+#menu * {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    -moz-user-select: none; /* Firefox */
+}
+  
+#menu ul li {
+    display: inline;
+    margin: 1rem;
+    cursor: pointer;
+}
+  
+#menu ul {
+    list-style: none;
+    font-size: 2rem;
+    padding: 0px;
+    margin: 1rem 0px;
+}
+
+body {
+    background-image: linear-gradient(135deg, var(--gray), black);
+}
+
+.pop-up {
+    background-color: white;
+    position: fixed;
+    width: var(--worker-pop-up-width);
+    height: var(--worker-pop-up-height);
+    left: var(--worker-pop-up-left);
+    top: var(--worker-pop-up-top);
+
+    border-radius: 2rem;
+    border-style: double;
+    border-width: 1vw;
+}
+
+button {
+    color: black
+}
+
+.pop-up-button {
+    border-radius: .5rem;
+    border-style: double;
+    cursor: pointer;
+}
+
+.pop-up * {
+    font-family: 'recoletaregular_demo';
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pop-up h1 {
+    font-size: 5rem;
+}
+
+.pop-up ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.pop-up ul li {
+    display: inline;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'recoletaregular_demo';
+    src: url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff2') format('woff2'),
+         url('../fonts/Recoleta/recoleta-regulardemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-variant-ligatures: none;
+}
+
+.individual-worker li {
+    display: inline;
+}
+
+button {
+  color: black;
+}
